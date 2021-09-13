@@ -25,7 +25,10 @@ public class FirstFragment extends Fragment {
         textView1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Navigation.findNavController(view).navigate(R.id.navigation_to_secondFragment);
+
+                Bundle bundle = new Bundle();
+                bundle.putInt("number", 22);
+                Navigation.findNavController(view).navigate(R.id.navigation_to_secondFragment, bundle);
             }
         });
         return view;
