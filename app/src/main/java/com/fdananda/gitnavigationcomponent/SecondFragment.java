@@ -1,7 +1,6 @@
 package com.fdananda.gitnavigationcomponent;
 
 import android.os.Bundle;
-
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 import android.view.LayoutInflater;
@@ -23,6 +22,7 @@ public class SecondFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_second, container, false);
 
         textView2 = view.findViewById(R.id.textView2);
+        textView2.setText(String.valueOf(getArguments().getInt("number")));
         textView2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
