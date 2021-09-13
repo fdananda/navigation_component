@@ -27,7 +27,7 @@ public class FirstFragment extends Fragment {
             public void onClick(View v) {
 
                 Bundle bundle = new Bundle();
-                bundle.putInt("number", 22);
+                bundle.putInt("number", 2);
                 Navigation.findNavController(view).navigate(R.id.navigation_to_secondFragment, bundle);
             }
         });
